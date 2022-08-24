@@ -2,9 +2,15 @@
     padding: 0;
     margin: 0;
 }
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
 #full-topbar{
     background-image:url(https://adn-static1.nykaa.com/media/wysiwyg/2021/common-strip.jpg);
-
+    border: 1px solid rgba(108, 108, 108, 0.706);
+    
 }
 #topbar{
     width: 80%;
@@ -30,6 +36,9 @@
 #full-navbar{
     width: 100%;
     background-color: #fff;
+    /* position:sticky;
+    top: 0px; */
+    box-shadow: 1px 1px 5px rgba(118, 116, 116, 0.732);
     
 }
 #navbar{
@@ -66,21 +75,21 @@
 }
 #navbar>.search>input{
     width: 100%;
-    height: 5vh;
-    font-size: larger;
-    border-radius: 5px;
-    border:1px solid rgb(100, 99, 99);
-    padding: 3px;
+    height: 3vh;
+    font-size: 16px;
+    border-radius: 4px;
+    border:1px solid rgba(142, 142, 142, 0.419);
+    padding: 7px;
     background-color: #F4F4F4;
    
 }
 .search>button{
-    height: 6vh;
+    height: 5vh;
     border: 1px solid rgb(100, 99, 99);
     background-color: #ff2b80;
     padding: 7px;
-    font-size: 18px;
-    border-radius: 5px;
+    font-size: 16px;
+    /* border-radius: 5px; */
 }
 #navbar>.acc{
     display: flex;
@@ -107,7 +116,7 @@
 }
 #category-list{
     width: 100%;
-    box-shadow: 1px 2px 5px rgba(144, 144, 144, 0.629);
+    box-shadow: 1px 2px 7px rgba(94, 93, 93, 0.629);
     background-color: #fff;
 }
 #category-list>ul{
