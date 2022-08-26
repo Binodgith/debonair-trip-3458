@@ -26,7 +26,7 @@ cart_i = [
   
       rating: "26455",
   
-      shade: "9",
+      shade: "9 shade",
   
     },
   
@@ -41,7 +41,7 @@ cart_i = [
   
       rating: "24140",
   
-      shade: "6",
+      shade: "6 shade",
     },
   
     {
@@ -55,7 +55,7 @@ cart_i = [
   
       rating: "4018",
   
-      shade: "20",
+      shade: "20 shade",
     },
   
     {
@@ -69,7 +69,7 @@ cart_i = [
   
       rating: "18545",
   
-      shade: "16",
+      shade: "16 shade",
     },
   
     {
@@ -83,7 +83,7 @@ cart_i = [
   
       rating: "8930",
   
-      shade: "38",
+      shade: "38 shade",
     },
   
     {
@@ -97,13 +97,36 @@ cart_i = [
   
       rating: "29515",
   
-      shade: "6",
+      shade: "6 shade",
     }
   
 ]
 
-console.log(cart_i.length)
 
+
+
+document.querySelector("#cart_item_c").innerText=cart_i.length
+
+total_price=cart_i.reduce(function(acc,ele){
+    return acc+Number(ele.mrp)
+},0)
+document.querySelector("#total_amount").innerText=total_price
+
+document.querySelector("#coupon_apply").addEventListener("click", function(){
+  coupon_box=document.querySelector("#coupon").value
+  if(coupon_box=="@nka30"){
+    discount=(total_price*30)/100
+    document.querySelector("#total_amount").innerText=discount
+
+    coupon_note= document.querySelector("#coupon_note")
+    coupon_note.innerText="Your coupon has Applied and you saved for Rs. "+(total_price-discount)
+    
+    coupon_countainer=document.querySelector("#cart_summary>div:nth-child(2)")
+    coupon_countainer.style.margin="30px auto"
+    coupon_countainer.style.padding="15px"
+    coupon_countainer.style.visibility="visible"
+  }
+})
 cart_i.map(function(ele){
 
     let item_container=document.createElement("div");
@@ -121,10 +144,10 @@ cart_i.map(function(ele){
     p_shade.innerText=ele.shade
 
     let p_price=document.createElement("p");
-    p_price.innerText=ele.mrp
+    p_price.innerText="Rs ."+ele.mrp
     
     del=document.createElement("p")
-    del.innerText="Delete"
+    del.innerHTML='<i class="fa fa-trash-o"></i>'
 
     div1.append(p_image)
     div2.append(p_name)

@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:ghostwhite;
+}
+#full_page{
+    width: 80%;
+    margin: auto;
+}
+#full_page>h2{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    color: rgb(63, 63, 63);
+}
+#full_page>img{
+    width: 100%;
+}
+#page_container{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+    /* gap: 40px; */
+}
+#page_container>#filter_section{
+    width: 20%;
+    /* margin: auto; */
+    
+}
+#page_container>#product_section{
+    width: 75%;
+    /* margin: auto; */
+}
+#page_container>#filter_section>select{
+    width: 100%;
+    height: 7vh;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px rgba(100, 98, 98, 0.428);
+}
+
+#page_container>#product_section{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+    
+}
+
+#product_section>div{
+    background-color: #fff;
+    padding: 5px 20px;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px rgba(135, 135, 135, 0.398);
+}
+#product_section>div>img{
+    width: 100%;
+}
+#product_section>div>p:first-child{
+    color: #8FE0AB;
+    font-size: medium;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+}
+#product_section>div>h4{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:lighter;
+    text-align: center;
+    margin: 10px auto;
+    font-size: 16px;
+}
+
+#product_section>div>p:nth-child(4){
+    text-align: center;
+    font-size: 19px;
+    color: rgb(35, 35, 35);
+    margin: 15px 0px;
+}
+#product_section>div>p:nth-child(5){
+    text-align: center;
+    font-size: small;
+    color: #FB1E73;
+    display: inline-block;
+    margin-left: 25%;
+}
+#product_section>div>p:nth-child(6){
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 40px;
+}
+#product_section>div>p:nth-child(7){
+    text-align: center;
+    font-size: larger;
+    font-family:'Times New Roman', Times, serif;
+    color: lightslategrey;
+}
+#product_section>div>button{
+    width: 100%;
+    font-size: larger;
+    padding: 15px;
+    border: none;
+    background-color:transparent;
+    color:transparent;
+    position: absolute;
+    cursor: pointer;
+    /* visibility: hidden; */
+    bottom: 0;
+    left: 0;
+    transition: 0.2s;
+}
+
+#product_section>div>button:hover{
+    height: auto;
+    background-color:#FB1E73;
+    color: white;
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
