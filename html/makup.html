@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="shortcut icon" href="//images-static.nykaa.com/media/favicon/default/nykaa_favicon_a.png" type="image/x-icon">
-    <link rel="stylesheet" href="../css/cart.css">
+    <link rel="stylesheet" href="../css/product_page.css">
     <script src="https://kit.fontawesome.com/0a65b14701.js" crossorigin="anonymous"></script>
-    <title>Nykaa|Cart</title>
+    <title>Makup</title>
 </head>
 <body>
+
     <header>
         <div id="full-topbar">
             <div id="topbar">
@@ -46,7 +47,7 @@
                     <p><i class='fas fa-user-alt'></i> &nbsp; Account</p>
     
                 </div>
-                <div class="cart">
+                <div onclick="fun()" class="cart">
                     <i class="fas fa-shopping-bag"></i>
                 </div>
                 
@@ -70,37 +71,39 @@
         </ul>
     </div>
 
-    <div id="cart_section">
-        <div id="cart_items">
-            <h3><span id="cart_item_c"></span> Items in Cart</h3>
-        </div>
-        <div id="cart_summary">
-            <div>
-                <input id="coupon" type="text" placeholder="Enter Coupon code">
-                <button id="coupon_apply">Apply</button>
-            </div>
-                  
-            <div>
-                <p id="coupon_note"></p>
+    <div id="full_page">
+        <h2>Face Makeup Collection</h2>
+        <img src="https://images-static.nykaa.com/uploads/22088ac7-681e-48ef-b787-be18b5f3f3a3.jpg?tr=w-1200,cm-pad_resize" alt="">
+        <div id="page_container">
+            <div id="filter_section">
+                <select name="name" id="name">
+                    <option value="">Name</option>
+                    <option value="Ascending">Name: Ascending</option>
+                    <option value="Descending">Name:Descending</option>
+                </select>
+
+                <select name="price" id="price">
+                    <option value="">Price</option>
+                    <option value="high to low">High To Low</option>
+                    <option value="low To High">Low To High</option>
+                </select>
+
+                <select name="rating" id="rating">
+                    <option value="">Rating</option>
+                    <option value="5">5 Star</option>
+                    <option value="4">4 Star</option>
+                    <option value="3">3 Star</option>
+                </select>
             </div>
 
-            <div class="order_summary">
-                <h2>Order Summary</h2>
-                <hr>
-                <div>
-                    <p>Amount to be paid</p>
-                    <p><i class="fas fa-indian-rupee-sign"> </i>&nbsp;<span id="total_amount"></span></p>
-                </div>
-                <hr>
+            <div id="product_section">
 
-                <div>
-                    <button>Proceed to Payment</button>
-                </div>
             </div>
         </div>
     </div>
+    
+    
 </body>
 </html>
-
-<script src="../js/cart.js"></script>
 <script src="../js/header.js"></script>
+<script src="../js/makup.js"></script>
