@@ -10,7 +10,7 @@ function subm(){
     password=JSON.parse(localStorage.getItem("password"))
     
     if(email==emails && pwd==password){
-        window.history.back()
+        window.location.href="index.html"
     }
     else{
         alert("Wrong input!")

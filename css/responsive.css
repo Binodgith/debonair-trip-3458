@@ -1,3 +1,4 @@
+
 @media all and (min-width:600px) and (max-width:900px){
     #topbar{
         width:100%;
@@ -138,7 +139,7 @@
     }
 
 
-/* product page-------------> */
+    /* product page-------------> */
 
     #full_page{
         width: 95%;
