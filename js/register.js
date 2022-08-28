@@ -14,7 +14,9 @@ function subm(event){
     if(pwd1==pwd2){
         localStorage.setItem("email",JSON.stringify(emails))
         localStorage.setItem("password",JSON.stringify(pwd1))
-        window.history.back()
+        // window.history.back()
+        window.location.href="index.html"
+        
     }
     else{
         alert("password  Mismatch!")
