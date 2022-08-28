@@ -10,6 +10,7 @@ body{
     width: 80%;
     margin:50px auto;
     display: flex;
+    /* position: relative; */
     gap: 50px;
     justify-content: space-between;
 }
@@ -22,6 +23,7 @@ body{
     /* margin: auto; */
     position: fixed;
     right:100px;
+    
 }
 #cart_section>#cart_summary>div>input{
     width: 60%;
@@ -68,7 +70,7 @@ body{
     border-radius: 9px;
     background-color:#fb27271a;
     visibility:hidden;
-    transition: 1s;
+    transition: 0.5s;
 }
 #cart_summary hr{
     border: 1px dashed gray;
@@ -104,6 +106,8 @@ body{
     padding: 20px;
     border: 1px solid rgba(149, 148, 148, 0.512);
     border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 2px 3px rgba(190, 0, 0, 0.437);
 }
 #cart_items>#item_container>div>h3{
     font-size: large;

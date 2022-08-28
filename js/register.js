@@ -1,9 +1,10 @@
 document.querySelector("form").addEventListener("submit",subm)
 document.querySelector("#register_container>i").addEventListener("click",function(){
-    window.location.href="../html/index.html"
+    window.location.href="index.html"
 })
 
-function subm(){
+function subm(event){
+    event.preventDefault()
     names=document.querySelector("#name").value
     emails=document.querySelector("#email").value
     genders=document.querySelector("#gender").value
@@ -13,10 +14,10 @@ function subm(){
     if(pwd1==pwd2){
         localStorage.setItem("email",JSON.stringify(emails))
         localStorage.setItem("password",JSON.stringify(pwd1))
-        window.location.href="../html/index.html"
+        window.history.back()
     }
     else{
-        alert("password is Mismatch!")
+        alert("password  Mismatch!")
     }
 
 }
