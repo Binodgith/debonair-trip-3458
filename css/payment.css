@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: ghostwhite;
+}
+#payment_container{
+    width: 25%;
+    margin:40px auto;
+    padding: 40px;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+#payment_container>i{
+    font-size: 22px;
+    cursor: pointer;
+}
+#payment_container>h3{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-size: 25px;
+    color: #FA2979;
+    text-shadow: 1px 1px 2px rgba(130, 130, 130, 0.378);
+    margin: 10px 0px;
+}
+#payment_container>hr{
+    color: gray;
+    margin: 10px auto;
+}
+#payment_container>p{
+    text-align: center;
+    font-size: 22px;
+    color: rgba(9, 9, 9, 0.859);
+    margin-bottom: 30px;
+}
+#payment_container>label{
+    font-size: 25px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 20px 0px;
+}
+#payment_container>label:not(#cod){
+    color:gray ;
+}
+#payment_container>input[type="radio"]{
+    width: 3vw;
+    height: 3vh;
+    background-color:#FA2979;
+    margin: 20px 0
+    
+}
+input[type="radio"]::after{
+    background-color: #FA2979;
+}
+
+#payment_container>button{
+    width: 100%;
+    margin: 30px auto;
+    font-size: 22px;
+    padding: 10px;
+    background-color:#FA2979;
+    color: white;
+    border: none;
+    box-shadow: 1px 1px 3px gray;
+    cursor: pointer;
+
+}
+#payment_container>button:hover{
+    background-color:#d10855;
+}
+#payment_done{
+    width: 20%;
+    margin: auto;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px gray;
+    background-color: #fff;
+    position: absolute;
+    transform: translateX(-50%);
+    left:40%;
+    bottom: 50%;
+    transform: translateY(50%);
+    visibility: hidden;
+    transition: 0.2s;
+}
+#payment_done>img{
+    width: 100%;
+}
+#payment_done>p{
+    font-size: 30px;
+    text-align: center;
+}
+#payment_done>button{
+    font-size:20px ;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    background-color:#FA2979;
+    border:none;    
+    border-radius: 10px;
+    margin: 20px auto;
+    color: white;
+    cursor: pointer;
+
+}
+
+
+
+

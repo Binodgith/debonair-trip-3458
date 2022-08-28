@@ -296,6 +296,8 @@ skin_item = [
 ]
 
 // <-------it's a section for name wise filter---->
+cart_i=JSON.parse(localStorage.getItem("cart_data"))|| []
+account=localStorage.getItem("email")
 
 document.querySelector("#name").addEventListener("change",function(){
     selected=document.querySelector("#name").value
@@ -356,6 +358,8 @@ document.querySelector("#filter_section>#rating").addEventListener("change", fun
 })
 
 
+
+
 productcall(skin_item)
 function productcall(data){
     document.querySelector("#product_section").innerHTML=""
@@ -394,9 +398,23 @@ function productcall(data){
 
         p_button=document.createElement("button")
         p_button.innerText="Add To Cart"
+        p_button.addEventListener("click",function(event){
+          if(account!=null && Number(cart_i.length)<7){
+            cart_i.push(ele)
+            localStorage.setItem("cart_data",JSON.stringify(cart_i))
+            window.location.reload()
+          }else if(account==null){
+            location.href="register.html"
+          }
+          else{
+            alert("Cart Length should be less than 7")
+          }
+          
+        })
 
         div.append(p_tag,p_image,p_title,p_price,p_star,P_rating,p_shade,p_button);
         document.querySelector("#product_section").append(div)
     })
 }
+
 

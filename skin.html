@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="css/header.css">
+    
     <link rel="shortcut icon" href="//images-static.nykaa.com/media/favicon/default/nykaa_favicon_a.png" type="image/x-icon">
-    <link rel="stylesheet" href="../css/product_page.css">
+    <link rel="stylesheet" href="css/product_page.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <script src="https://kit.fontawesome.com/0a65b14701.js" crossorigin="anonymous"></script>
-    <title>Makup</title>
+    <title>skin</title>
+
+    
 </head>
 <body>
 
@@ -29,14 +33,14 @@
         
         <div id="full-navbar">
             <div id="navbar">
-
-                <img src="../image/logo.png" alt="">
+                <i class="fas fa-bars"></i>
+                <img src="image/logo.png" alt="">
                 <ul>
                     <li>category</li>
-                    <li>Brands</li>
+                    <li class="makup">Brands</li>
                     <li>Luxe</li>
-                    <li>Nykaa fashion</li>
-                    <li>Beuty fashion</li>
+                    <li class="skin">Nykaa fashion</li>
+                    <li class="makup">Beuty fashion</li>
                 </ul>
                 <div class="search">
                     
@@ -44,11 +48,13 @@
                     <!-- <button><i class='fas fa-search'></i></button> -->
                 </div>
                 <div class="acc">
+                    <i class='fas fa-user-alt'></i>
                     <p><i class='fas fa-user-alt'></i> &nbsp; Account</p>
     
                 </div>
                 <div onclick="fun()" class="cart">
                     <i class="fas fa-shopping-bag"></i>
+                    <p id="cart_count"></p>
                 </div>
                 
             </div>
@@ -58,22 +64,43 @@
 
     <div id="category-list">
         <ul>
-            <li>Makup</li>
-            <li>Skin</li>
-            <li>Hair</li>
+            <li class="makup" >Makup</li>
+            <li class="skin">Skin</li>
+            <li class="makup">Hair</li>
             <li>Appliances</li>
             <li>Bath & Body</li>
-            <li>Natural</li>
+            <li class="makup">Natural</li>
             <li>Mom & Baby</li>
-            <li>Men</li>
+            <li class="skin">Men</li>
             <li>Frangrance</li>
-            <li>Pop ups</li>
+            <li class="skin">Pop ups</li>
         </ul>
     </div>
 
+    <div id="category-list2">
+        <div>
+            <p>Categories</p>
+            <i class="fas fa-xmark"></i>
+        </div>
+        
+        <ul>
+            <li class="makup" >Makup</li>
+            <li class="skin">Skin</li>
+            <li class="makup">Hair</li>
+            <li>Appliances</li>
+            <li>Bath & Body</li>
+            <li class="makup">Natural</li>
+            <li>Mom & Baby</li>
+            <li class="skin">Men</li>
+            <li>Frangrance</li>
+            <li class="skin">Pop ups</li>
+        </ul>
+    </div>
+
+
     <div id="full_page">
-        <h2>Face Makeup Collection</h2>
-        <img src="https://images-static.nykaa.com/uploads/22088ac7-681e-48ef-b787-be18b5f3f3a3.jpg?tr=w-1200,cm-pad_resize" alt="">
+        <h2>Skin mosturiser Collection</h2>
+        <img src="https://images-static.nykaa.com/uploads/461d513e-4e40-49aa-ab72-984d9cb03d69.jpg?tr=w-1200,cm-pad_resize" alt="">
         <div id="page_container">
             <div id="filter_section">
                 <select name="name" id="name">
@@ -102,8 +129,7 @@
         </div>
     </div>
     
-    
 </body>
 </html>
-<script src="../js/header.js"></script>
-<script src="../js/makup.js"></script>
+<script src="js/header.js"></script>
+<script src="js/skin.js"></script>
